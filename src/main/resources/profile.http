@@ -1,0 +1,39 @@
+POST http://localhost:8080/profile/create
+Content-Type: application/json
+
+{
+  "name": "John",
+  "surname": "Johny",
+  "login": "joh1",
+  "password": "123"
+}
+
+
+
+###
+PUT http://localhost:8080/profile/login
+Content-Type: application/json
+
+{
+  "login": "dev",
+  "password": "123"
+}
+
+
+###
+PUT http://localhost:8080/profile/update/1
+Content-Type: application/json
+
+{
+  "name": "Ali",
+  "surname": "Vali"
+}
+
+
+###
+GET http://localhost:8080/profile/list
+
+
+
+###
+PUT http://localhost:8080/profile/update/1

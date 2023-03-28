@@ -1,0 +1,26 @@
+POST http://localhost:8080/comment/create
+Content-Type: application/json
+
+{
+  "content": "Nice",
+  "profile_id": 1,
+  "post_id": 3
+}
+
+###
+
+GET http://localhost:8080/comment/list/3
+
+
+###
+ PUT http://localhost:8080/comment/update/2/1
+Content-Type: application/json
+
+{
+  "content": "hello"
+}
+
+
+###
+
+DELETE http://localhost:8080/comment/delete/1/2

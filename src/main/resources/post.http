@@ -1,0 +1,27 @@
+POST http://localhost:8080/post/create
+Content-Type: application/json
+
+{
+  "title": "Hat",
+  "context": "Yangi",
+  "profile_id": 1
+}
+
+###
+
+PUT http://localhost:8080/post/update/1
+Content-Type: application/json
+
+{
+  "title": "Book",
+  "context": "Java programming",
+  "profile_id": 1
+}
+
+
+###
+GET http://localhost:8080/post/list/2
+
+###
+
+DELETE http://localhost:8080/post/delete/1/2
